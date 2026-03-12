@@ -1377,7 +1377,7 @@ const SCENARIOS: Record<
 
 type SigKind = "clock" | "bit" | "bus";
 interface SigDef {
-  key: keyof Omit<CycleState, "cycle" | "clk" | "explain">;
+  key: keyof Omit<CycleState,"cycle"|"explain">;
   label: string;
   kind: SigKind;
   color: string;
